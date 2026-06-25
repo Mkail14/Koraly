@@ -1,0 +1,92 @@
+.logo-marquee-track {
+  overflow: hidden;
+  position: relative;
+  padding: 8px 0;
+}
+.logo-marquee-track::before,
+.logo-marquee-track::after {
+  content: '';
+  position: absolute;
+  top: 0; bottom: 0;
+  width: 120px;
+  z-index: 2;
+  pointer-events: none;
+}
+.logo-marquee-track::before {
+  left: 0;
+  background: linear-gradient(90deg, var(--bg-2), transparent);
+}
+.logo-marquee-track::after {
+  right: 0;
+  background: linear-gradient(270deg, var(--bg-2), transparent);
+}
+.logo-marquee-content {
+  display: flex;
+  gap: 16px;
+  width: max-content;
+  animation: logo-marquee 28s linear infinite;
+}
+.logo-slot {
+  flex-shrink: 0;
+  width: 140px;
+  height: 90px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: var(--glass-bg);
+  border: 1px dashed rgba(160, 112, 56, 0.18);
+  border-radius: 12px;
+  backdrop-filter: blur(12px);
+  transition: border-color 0.25s, background 0.25s;
+}
+.logo-slot:hover {
+  border-color: rgba(160, 112, 56, 0.38);
+  background: var(--glass-hover);
+}
+
+.benefit-icon {
+  width: 44px; height: 44px;
+  border-radius: 50%;
+  background: rgba(212,184,150,0.07);
+  border: 1px solid rgba(212,184,150,0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+}
+
+.offer-card {
+  border-radius: 18px;
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.offer-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+}
+.offer-emoji { font-size: 2.5rem; }
+
+.part-orb {
+  width: 400px; height: 400px;
+  top: -80px; left: 5%;
+  opacity: 0.5;
+}
+.part-subtitle { max-width: 520px; margin: 0 auto; }
+
+.card-desc { font-size: 0.88rem; margin: 0; }
+
+.logo-placeholder-icon {
+  color: rgba(212,184,150,0.25);
+  font-size: 1.6rem;
+  display: block;
+  margin-bottom: 4px;
+}
+.logo-placeholder-text { font-size: 0.68rem; color: rgba(212,184,150,0.3); }
+
+.offer-title { color: #f5e6d3; }
+.offer-desc { font-size: 0.85rem; color: rgba(245,230,211,0.5); }
+.offer-perk { font-size: 0.83rem; color: rgba(245,230,211,0.75); }
+.offer-cta { font-size: 0.88rem; }

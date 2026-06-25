@@ -1,0 +1,85 @@
+.hero-badge {
+  padding: 8px 20px;
+  background: rgba(212,184,150,0.07);
+  border: 1px solid rgba(212,184,150,0.2);
+  border-radius: 50px;
+  font-size: 0.83rem;
+  color: rgba(245,230,211,0.7);
+  backdrop-filter: blur(12px);
+}
+.cat-icon {
+  width: 42px; height: 42px;
+  border-radius: 50%;
+  background: rgba(212,184,150,0.07);
+  border: 1px solid rgba(212,184,150,0.18);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  flex-shrink: 0;
+}
+.eco-info-icon {
+  width: 42px; height: 42px;
+  border-radius: 50%;
+  background: rgba(212,184,150,0.07);
+  border: 1px solid rgba(212,184,150,0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+}
+.token-card {
+  background: rgba(212,184,150,0.04);
+  border: 1px solid rgba(212,184,150,0.2);
+  border-radius: 14px;
+  backdrop-filter: blur(12px);
+}
+.token-icon {
+  width: 40px; height: 40px;
+  border-radius: 50%;
+  background: rgba(212,184,150,0.08);
+  border: 1px solid rgba(212,184,150,0.22);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+}
+
+.rec-orb {
+  width: 400px; height: 400px;
+  top: -80px; right: 5%;
+  opacity: 0.45;
+}
+.rec-subtitle { max-width: 500px; margin: 0 auto; }
+
+.filter-btn { font-size: 0.82rem; padding: 6px 18px; }
+
+.reward-desc { font-size: 0.88rem; }
+.reward-footer { border-top: 1px solid rgba(255,255,255,0.06); }
+.reward-cta { font-size: 0.8rem; }
+
+.eco-info-desc { font-size: 0.88rem; margin: 0; }
+
+.example-intro { font-size: 0.85rem; }
+.example-table { font-size: 0.88rem; }
+.table-header-row { background: rgba(212,184,150,0.08); }
+.table-total-row { background: rgba(255,255,255,0.03); }
+
+.token-card--green { border-color: rgba(82,183,136,0.3); }
+.token-icon--green {
+  background: rgba(82,183,136,0.08);
+  border-color: rgba(82,183,136,0.22);
+}
+.token-value-text { font-size: 1rem; color: #52b788; }
+.token-note { font-size: 0.82rem; color: var(--text-2); margin: 4px 0 0; }
+
+.app-title { font-size: 0.95rem; }
+.badge-soon {
+  background: rgba(212,184,150,0.12);
+  color: #d4b896;
+  border: 1px solid rgba(212,184,150,0.25);
+  font-size: 0.68rem;
+  letter-spacing: 0.5px;
+}
+.app-desc { font-size: 0.83rem; color: var(--text-2); margin: 0; }
+.app-highlight { color: var(--text-1); }
