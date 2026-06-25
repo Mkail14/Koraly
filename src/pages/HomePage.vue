@@ -112,7 +112,7 @@ function handleAppClick() {
 
       <!-- Sous-titre -->
       <p class="hero-desc anim-fade-up anim-delay-2 mb-4">
-        Participe au nettoyage des plages, forêts et mangroves de Mayotte<br class="d-none d-md-block" />
+        Participe au nettoyage des plages, forêts et mangroves de Mayotte
         et gagne des récompenses grâce aux Lily-points.
       </p>
 

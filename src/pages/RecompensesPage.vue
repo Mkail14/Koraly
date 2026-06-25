@@ -91,7 +91,7 @@ const exampleTotal = exampleTable.reduce((s, r) => s + r.points, 0)
               <div class="d-flex align-items-center justify-content-between pt-2 reward-footer">
                 <span
                   class="fw-bold"
-                  :style="item.points === 0 ? 'color:#52b788;' : 'color:#d4b896;'"
+                  :style="item.points === 0 ? 'color:var(--green)' : 'color:var(--beige-300)'"
                 >
                   <i class="bi bi-coin me-1"></i>
                   {{ item.points === 0 ? 'Offert' : item.points + ' pts' }}
