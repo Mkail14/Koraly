@@ -50,21 +50,10 @@ const offers = [
 
 <template>
 
-  <!-- En-tête -->
-  <section class="page-header text-center">
-    <div class="page-header-grid"></div>
-    <div class="orb orb-green part-orb"></div>
-    <div class="container position-relative z-1">
-      <span class="section-label anim-fade-down">Collaboration</span>
-      <h1 class="section-title page-title anim-fade-up anim-delay-1">Partenaires</h1>
-      <p class="section-subtitle anim-fade-up anim-delay-2 part-subtitle">
-        Ensemble, construisons un Mayotte plus propre et plus durable.
-      </p>
-    </div>
-  </section>
+
 
   <!-- Pourquoi devenir partenaire -->
-  <section class="py-5 section-bg-2">
+  <section class=" m-5 py-5 section-bg-2">
     <div class="container">
       <div class="text-center mb-5 reveal">
         <span class="section-label">Avantages</span>

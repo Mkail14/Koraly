@@ -4,7 +4,7 @@ import '@/assets/css/components/FooterBar.css'
 const navLinks = [
   { to: '/', label: 'Accueil' },
   { to: '/participer', label: 'Participer' },
-  { to: '/recompenses', label: 'Récompenses' },
+  { to: '/application', label: 'Application' },
   { to: '/partenaires', label: 'Partenaires' },
   { to: '/contact', label: 'Contact' },
 ]
