@@ -53,10 +53,10 @@
 
 /* ─── THÈME SOMBRE ─── */
 [data-theme="dark"] {
-  --bg:   #080808;
-  --bg-2: #0e0e0e;
-  --bg-3: #141414;
-  --bg-4: #1c1c1c;
+  --bg:   #555252;
+  --bg-2: #0a0a0aec;
+  --bg-3: #111010c5;
+  --bg-4: #0a0a0a;
 
   --beige-100: #f5e6d3;
   --beige-200: #e8d5b7;

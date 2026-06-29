@@ -109,17 +109,17 @@
   align-items: center;
   gap: 0.85rem;
   padding: 12px 22px;
-  background: var(--text-1);
-  color: var(--bg) !important;
+  background: linear-gradient(135deg, var(--beige-400) 0%, var(--beige-300) 100%);
+  color: #fff !important;
   border-radius: 16px;
   text-decoration: none;
   transition: transform 0.22s, box-shadow 0.22s;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+  box-shadow: 0 4px 20px rgba(160,105,40,0.25);
   min-height: 56px;
 }
 .store-btn:hover {
   transform: translateY(-3px);
-  box-shadow: 0 10px 32px rgba(0,0,0,0.24);
+  box-shadow: 0 10px 32px rgba(160,105,40,0.38);
 }
 .store-btn--light {
   background: rgba(255,255,255,0.12);

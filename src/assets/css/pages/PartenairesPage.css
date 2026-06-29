@@ -14,11 +14,11 @@
 }
 .logo-marquee-track::before {
   left: 0;
-  background: linear-gradient(90deg, var(--bg-2), transparent);
+  background: linear-gradient(90deg, var(--bg), transparent);
 }
 .logo-marquee-track::after {
   right: 0;
-  background: linear-gradient(270deg, var(--bg-2), transparent);
+  background: linear-gradient(270deg, var(--bg), transparent);
 }
 .logo-marquee-content {
   display: flex;

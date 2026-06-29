@@ -158,8 +158,10 @@
 
 .hero-team-row {
   display: flex;
-  gap: 0.55rem;
-  align-items: flex-end;
+  gap: 0.4rem;
+  position: relative;
+  left: 100px;
+ 
 }
 
 .hero-member-card {
@@ -352,7 +354,7 @@
 }
 
 .hero-info-card {
-  width: 100%;
+  width: 122%;
   background: rgba(255, 255, 255, 0.90);
   border: 1px solid rgba(120, 80, 32, 0.16);
   border-radius: 20px;
@@ -361,6 +363,7 @@
   margin-top: 400px;
   right: 75px;
 }
+
 [data-theme="dark"] .hero-info-card {
   background: rgba(26, 20, 14, 0.84);
   border-color: rgba(212, 184, 150, 0.14);
@@ -401,12 +404,14 @@
   box-shadow: none;
 }
 
-/* Body */
+/* Body — hauteur fixe pour éviter le saut de layout lors des transitions */
 .hic-body {
-  min-height: 108px;
+  height: 148px;
   display: flex;
   flex-direction: column;
   gap: 0.42rem;
+  overflow: hidden;
+  position: relative;
 }
 
 /* Actualités */
@@ -563,7 +568,11 @@
 
 /* Transition contenu card */
 .hic-fade-enter-active { transition: opacity 0.30s ease, transform 0.30s ease; }
-.hic-fade-leave-active { transition: opacity 0.18s ease; }
+.hic-fade-leave-active {
+  transition: opacity 0.18s ease;
+  position: absolute; /* sort du flux pour ne pas faire bouger la carte */
+  top: 0; left: 0; width: 100%;
+}
 .hic-fade-enter-from   { opacity: 0; transform: translateY(6px); }
 .hic-fade-leave-to     { opacity: 0; }
 

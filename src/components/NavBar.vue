@@ -9,6 +9,7 @@ const menuOpen = ref(false)
 const searchOpen    = ref(false)
 const searchQuery   = ref('')
 const searchInputEl = ref(null)
+const searchWrapEl  = ref(null)
 
 async function toggleSearch() {
   searchOpen.value = !searchOpen.value
@@ -23,6 +24,12 @@ async function toggleSearch() {
 function closeSearch() {
   searchOpen.value = false
   searchQuery.value = ''
+}
+
+function handleClickOutsideSearch(e) {
+  if (searchOpen.value && searchWrapEl.value && !searchWrapEl.value.contains(e.target)) {
+    closeSearch()
+  }
 }
 
 // ── Overlay contact ──
@@ -48,10 +55,12 @@ const suggestions = ['Comment participer ?', 'Mes Lily-points', 'Partenaires', '
 onMounted(() => {
   isDark.value = document.documentElement.getAttribute('data-theme') === 'dark'
   document.addEventListener('keydown', handleKey)
+  document.addEventListener('pointerdown', handleClickOutsideSearch)
 })
 
 onUnmounted(() => {
   document.removeEventListener('keydown', handleKey)
+  document.removeEventListener('pointerdown', handleClickOutsideSearch)
   document.body.style.overflow = ''
 })
 
@@ -159,7 +168,7 @@ function aiReply(msg) {
         </ul>
 
         <!-- ④ Recherche extensible — dans la pilule principale -->
-        <div class="fnav-search" :class="{ 'is-open': searchOpen }">
+        <div ref="searchWrapEl" class="fnav-search" :class="{ 'is-open': searchOpen }">
           <input
             ref="searchInputEl"
             class="fnav-search-input"

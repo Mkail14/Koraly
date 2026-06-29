@@ -189,6 +189,13 @@ function handleAppClick() {
   appMsgVisible.value = true
   setTimeout(() => { appMsgVisible.value = false }, 3000)
 }
+
+function scrollToActus() {
+  const el = document.getElementById('actualitespage')
+  if (!el) return
+  const top = el.getBoundingClientRect().top + window.scrollY - 5
+  window.scrollTo({ top, behavior: 'smooth' })
+}
 </script>
 
 <template>
@@ -234,9 +241,9 @@ function handleAppClick() {
               </span>
             </Transition>
           </div>
-          <a href="#actualitespage" class="btn btn-glass rounded-pill hero-btn">
+          <button class="btn btn-glass rounded-pill hero-btn" @click="scrollToActus">
             <i class="bi bi-newspaper me-2"></i>Actualités
-          </a>
+          </button>
         </div>
 
         <!-- Indicateur de scroll -->
@@ -282,7 +289,7 @@ function handleAppClick() {
 
         <div class="hero-right-group anim-fade-up anim-delay-1 pe-4">
 
-          <div class="hero-info-card me-5">
+          <div class="hero-info-card">
 
              
 
@@ -293,9 +300,9 @@ function handleAppClick() {
                 <span :class="`actu-badge actu-badge--${actualites[0].type}`">{{ actualites[0].typeLabel }}</span>
                 <div class="hic-actu-date">{{ actualites[0].date }}</div>
                 <div class="hic-actu-title">{{ actualites[0].short }}</div>
-                <a href="#actualitespage" class="hic-link">
+                <button class="hic-link" style="background:none;border:none;padding:0;cursor:pointer;" @click="scrollToActus">
                   Voir toutes les actus <i class="bi bi-arrow-right-short"></i>
-                </a>
+                </button>
               </div>
 
               <!-- Lily-point -->

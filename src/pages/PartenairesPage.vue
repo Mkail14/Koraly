@@ -53,7 +53,7 @@ const offers = [
 
 
   <!-- Pourquoi devenir partenaire -->
-  <section class=" m-5 py-5 section-bg-2">
+  <section class="m-5 py-5 section-bg">
     <div class="container">
       <div class="text-center mb-5 reveal">
         <span class="section-label">Avantages</span>
@@ -99,7 +99,7 @@ const offers = [
   </section>
 
   <!-- Logos défilants -->
-  <section class="py-5 section-bg-2">
+  <section class="py-5 section-bg">
     <div class="container">
       <div class="text-center mb-5 reveal">
         <span class="section-label">Ils nous soutiennent</span>
